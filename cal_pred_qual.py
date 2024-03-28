@@ -62,8 +62,9 @@ for item in contents: # Iteracja po współrzędnych bounding-boxów otrzymanych
                 else:
                     for x in range(0, len(obj.detectbox)):
                         iou.append(calculate_iou(obj.testbox[x], obj.detectbox[x]))
-            obj.iou = iou 
-            obj.mean_iou = sum(obj.iou)/len(obj.iou)  
+            obj.iou = iou
+            if len(obj.iou) != 0: 
+                obj.mean_iou = sum(obj.iou)/len(obj.iou)  
 
 bct = 0
 bco = 0
