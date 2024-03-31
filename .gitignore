@@ -25,7 +25,7 @@
 
 storage.googleapis.com
 .cometml-runs
-runs/*
+runs/detect
 data/*
 data/images/*
 !data/*.yaml
