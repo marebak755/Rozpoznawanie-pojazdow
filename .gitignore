@@ -26,7 +26,6 @@
 storage.googleapis.com
 .cometml-runs
 runs/*
-datasets/*
 data/*
 data/images/*
 !data/*.yaml
@@ -43,6 +42,7 @@ results*.csv
 coco/
 coco128/
 VOC/
+car_dataset/
 
 # MATLAB GitIgnore -----------------------------------------------------------------------------------------------------
 *.m~
@@ -50,7 +50,6 @@ VOC/
 !targets*.mat
 
 # Neural Network weights -----------------------------------------------------------------------------------------------
-*.pt
 *.pb
 *.onnx
 *.engine
