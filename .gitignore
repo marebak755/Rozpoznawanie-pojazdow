@@ -25,6 +25,8 @@
 
 storage.googleapis.com
 .cometml-runs
+runs/*
+datasets/*
 data/*
 data/images/*
 !data/*.yaml
@@ -48,7 +50,6 @@ VOC/
 !targets*.mat
 
 # Neural Network weights -----------------------------------------------------------------------------------------------
-*.weights
 *.pt
 *.pb
 *.onnx
